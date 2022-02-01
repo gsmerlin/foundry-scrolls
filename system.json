@@ -1,0 +1,21 @@
+{
+    "name": "scrolls",
+    "title": "Scrolls",
+    "description": "Official Scrolls foundry support",
+    "author": "Gabriel S. Merlin",
+    "version": "0.0.1",
+    "minimumCoreVersion": "9",
+    "compatibleCoreVersion": "9",
+    "esmodules": [
+        "scrolls.js"
+    ],
+    "styles": [
+        "scrolls.css"
+    ],
+    "packs": [],
+    "languages": [],
+    "gridDistance": 1,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "hp",
+    "secondaryTokenAttribute": "ep"
+}

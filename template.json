@@ -1,0 +1,103 @@
+{
+    "Actor": {
+        "types": [
+            "Character",
+            "Simple NPC",
+            "Boss NPC"
+        ],
+        "templates": {
+            "base": {
+                "health": {
+                    "value": 5,
+                    "min": 0,
+                    "max": 5
+                },
+                "energy": {
+                    "value": 5,
+                    "min": 0,
+                    "max": 5
+                },
+                "barrier": {
+                    "value": 0,
+                    "min": 0,
+                    "max": 99
+                },
+                "armor": 0,
+                "attributes": {
+                    "physical": {
+                        "level": 0,
+                        "modifier": 0
+                    },
+                    "mental": {
+                        "level": 0,
+                        "modifier": 0
+                    },
+                    "social": {
+                        "level": 0,
+                        "modifier": 0
+                    }
+                },
+                "level": 1,
+                "description": ""
+            }
+        },
+        "Character": {
+            "templates": ["base"],
+            "experience": 0
+        },
+        "Simple NPC": {
+            "templates": ["base"]
+        },
+        "Boss NPC": {
+            "templates": ["base"],
+            "edge": 0
+        }        
+    },
+    "Item": {
+        "types": [
+            "Armor",
+            "Weapon",
+            "Misc",
+            "Skill",
+            "Technique"
+        ],
+        "templates": {
+            "base": {
+                "description": ""
+            },
+            "itemBase": {
+                "quantity": 0,
+                "weight": 0,
+                "value": 0,
+                "effects": ""
+            },
+            "statisticBase": {
+                "level": 0
+            },
+            "rating": {
+                "rating": 0
+            }
+        },
+        "Armor": {
+            "templates": ["base", "itemBase", "rating"]
+        },
+        "Weapon": {
+            "templates": ["base, itemBase, rating"]
+        },
+        "Misc": {
+            "templates": ["base", "itemBase"]
+        },
+        "Skill": {
+            "templates": ["base", "statisticBase"],
+            "parentAttribute": "",
+            "modifier": 0,
+            "experience": 0
+        },
+        "Technique": {
+            "templates": ["base", "statisticBase"],
+            "energyPointCost": 0,
+            "parentSkill": "",
+            "activationType": ""
+        }
+    }
+}
